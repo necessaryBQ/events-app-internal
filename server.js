@@ -61,7 +61,7 @@ app.put('/event/like', (req, res) => {
         });
 });
 
-// Passes through to shared method.
+// Passes through to shared method. ....
 // Delete distinguishes this route from put above
 app.delete('/event/like', (req, res) => {
     db.removeLike(req.body.id)
