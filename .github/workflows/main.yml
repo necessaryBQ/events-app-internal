@@ -1,14 +1,16 @@
 name: Build and Push to Docker
 
+
+
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   DOCKER_ID:  ${{ secrets.DOCKER_HUB_USERNAME }}
   RUN_NUMBER: ${{ github.run_number }}
-  IMAGE: external
+  IMAGE: internal
 
 jobs:
   setup-build-publish:
